@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application
+    x:Class="TiviIPTVPlayer.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TiviIPTVPlayer">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--
+              App-wide palette, theme-aware: the TV-friendly dark base for Dark,
+              a clean light variant for Light. Pages must reference these via
+              {ThemeResource} so a runtime theme switch re-evaluates them.
+            -->
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Dark">
+                    <SolidColorBrush x:Key="AppAccentBrush" Color="#FF3B82F6" />
+                    <SolidColorBrush x:Key="AppAccentDimBrush" Color="#FF1D4ED8" />
+                    <SolidColorBrush x:Key="PlayerPanelBrush" Color="#FF101318" />
+                    <SolidColorBrush x:Key="SidePanelBrush" Color="#FF161A21" />
+                    <SolidColorBrush x:Key="SidePanelBorderBrush" Color="#FF262C36" />
+                    <SolidColorBrush x:Key="PanelHeaderTextBrush" Color="#FF9AA4B2" />
+                    <SolidColorBrush x:Key="FavoriteStarBrush" Color="#FFEFB53C" />
+                    <SolidColorBrush x:Key="SubtleSurfaceBrush" Color="#22FFFFFF" />
+                    <SolidColorBrush x:Key="MutedTextBrush" Color="#FFC8CDD6" />
+                    <SolidColorBrush x:Key="MutedGlyphBrush" Color="#FF8A93A2" />
+                    <SolidColorBrush x:Key="HeaderSeparatorBrush" Color="#33FFFFFF" />
+                    <CornerRadius x:Key="PanelCornerRadius">8</CornerRadius>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="AppAccentBrush" Color="#FF2563EB" />
+                    <SolidColorBrush x:Key="AppAccentDimBrush" Color="#FF1D4ED8" />
+                    <SolidColorBrush x:Key="PlayerPanelBrush" Color="#FFF4F6F9" />
+                    <SolidColorBrush x:Key="SidePanelBrush" Color="#FFFFFFFF" />
+                    <SolidColorBrush x:Key="SidePanelBorderBrush" Color="#FFE2E6ED" />
+                    <SolidColorBrush x:Key="PanelHeaderTextBrush" Color="#FF5B6570" />
+                    <SolidColorBrush x:Key="FavoriteStarBrush" Color="#FFD99A1F" />
+                    <SolidColorBrush x:Key="SubtleSurfaceBrush" Color="#12000000" />
+                    <SolidColorBrush x:Key="MutedTextBrush" Color="#FF52606D" />
+                    <SolidColorBrush x:Key="MutedGlyphBrush" Color="#FF7B8794" />
+                    <SolidColorBrush x:Key="HeaderSeparatorBrush" Color="#1F000000" />
+                    <CornerRadius x:Key="PanelCornerRadius">8</CornerRadius>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Default">
+                    <SolidColorBrush x:Key="AppAccentBrush" Color="#FF3B82F6" />
+                    <SolidColorBrush x:Key="AppAccentDimBrush" Color="#FF1D4ED8" />
+                    <SolidColorBrush x:Key="PlayerPanelBrush" Color="#FF101318" />
+                    <SolidColorBrush x:Key="SidePanelBrush" Color="#FF161A21" />
+                    <SolidColorBrush x:Key="SidePanelBorderBrush" Color="#FF262C36" />
+                    <SolidColorBrush x:Key="PanelHeaderTextBrush" Color="#FF9AA4B2" />
+                    <SolidColorBrush x:Key="FavoriteStarBrush" Color="#FFEFB53C" />
+                    <SolidColorBrush x:Key="SubtleSurfaceBrush" Color="#22FFFFFF" />
+                    <SolidColorBrush x:Key="MutedTextBrush" Color="#FFC8CDD6" />
+                    <SolidColorBrush x:Key="MutedGlyphBrush" Color="#FF8A93A2" />
+                    <SolidColorBrush x:Key="HeaderSeparatorBrush" Color="#33FFFFFF" />
+                    <CornerRadius x:Key="PanelCornerRadius">8</CornerRadius>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+
+            <Style x:Key="PanelHeaderText" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontWeight" Value="SemiBold" />
+                <Setter Property="Foreground" Value="{ThemeResource PanelHeaderTextBrush}" />
+                <Setter Property="Margin" Value="12,10,12,6" />
+            </Style>
+
+            <!-- All tooltips render at 14px (minimum app font size) -->
+            <Style TargetType="ToolTip">
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

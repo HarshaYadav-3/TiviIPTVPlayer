@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "TiviIPTVPlayer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "TiviIPTVPlayer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

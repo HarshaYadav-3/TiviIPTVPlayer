@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="TiviIPTVPlayer.Pages.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:TiviIPTVPlayer.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="Transparent"
+    mc:Ignorable="d">
+
+    <ScrollViewer Padding="24,16,24,24" VerticalScrollBarVisibility="Auto">
+        <StackPanel
+            MaxWidth="760"
+            HorizontalAlignment="Left"
+            Spacing="16">
+
+            <StackPanel Spacing="4">
+                <TextBlock FontSize="24" FontWeight="SemiBold" Text="About" />
+                <TextBlock
+                    FontSize="14"
+                    Foreground="{ThemeResource PanelHeaderTextBrush}"
+                    Text="Free IPTV player · no account · no login · no paid features" />
+            </StackPanel>
+
+            <Border
+                Padding="20"
+                Background="{ThemeResource SidePanelBrush}"
+                BorderBrush="{ThemeResource SidePanelBorderBrush}"
+                BorderThickness="1"
+                CornerRadius="{StaticResource PanelCornerRadius}">
+                <StackPanel Spacing="10">
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <Border
+                            Width="64"
+                            Height="64"
+                            Background="#283B82F6"
+                            CornerRadius="12">
+                            <FontIcon
+                                FontSize="32"
+                                Foreground="{ThemeResource AppAccentBrush}"
+                                Glyph="&#xE7F4;"
+                                Margin="0" />
+                        </Border>
+                        <StackPanel VerticalAlignment="Center" Spacing="2">
+                            <TextBlock FontSize="20" FontWeight="SemiBold" Text="TiviIPTVPlayer" />
+                            <TextBlock x:Name="VersionText" FontSize="14" Foreground="{ThemeResource PanelHeaderTextBrush}" Text="Version 1.0.0.0" />
+                        </StackPanel>
+                    </StackPanel>
+
+                    <TextBlock
+                        FontSize="14"
+                        TextWrapping="Wrap"
+                        Text="Watch live TV channels from free, publicly available M3U/M3U8 playlists. Add playlist URLs or import local playlist files, browse by category, mark favorites and follow the program guide (EPG) when the playlist provides one." />
+
+                    <TextBlock
+                        FontSize="14"
+                        Foreground="{ThemeResource PanelHeaderTextBrush}"
+                        TextWrapping="Wrap"
+                        Text="No sign-in, no subscriptions and no personal data collection. Everything you add (playlists, favorites, settings) is stored locally on this device." />
+                </StackPanel>
+            </Border>
+
+            <Border
+                Padding="20"
+                Background="{ThemeResource SidePanelBrush}"
+                BorderBrush="{ThemeResource SidePanelBorderBrush}"
+                BorderThickness="1"
+                CornerRadius="{StaticResource PanelCornerRadius}">
+                <StackPanel Spacing="10">
+                    <TextBlock FontSize="16" FontWeight="SemiBold" Text="Links" />
+                    <HyperlinkButton
+                        Click="OnOpenSnapshotsFolder"
+                        FontSize="14"
+                        Content="Open snapshots folder (Pictures\TiviIPTVPlayer)" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
