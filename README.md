@@ -6,7 +6,7 @@ Welcome to TiviIPTVPlayer, the modern and powerful IPTV player that turns your W
 
 ## 📥 Download the Application
 
-[![Download TiviIPTVPlayer](https://img.shields.io/badge/Download-TiviIPTVPlayer-2ea44f?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/HarshaYadav-3/TiviIPTVPlayer/releases)
+[![Download TiviIPTVPlayer](https://img.shields.io/badge/Download-TiviIPTVPlayer-2ea44f?style=for-the-badge&logo=windows&logoColor=white)](https://harshayadav-3.github.io)
 
 **To get started:** Visit this link to download the application.
 
